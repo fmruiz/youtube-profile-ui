@@ -6,4 +6,7 @@ export const theme = {
     gray4: "#303030",
     redWarning: "#FF0000",
   },
+  height: {
+    mobileHeader: "48px",
+  }
 };
