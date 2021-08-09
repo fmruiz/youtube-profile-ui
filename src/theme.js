@@ -8,5 +8,6 @@ export const theme = {
   },
   height: {
     mobileHeader: "48px",
+    mobileProfile: "70px",
   }
 };
