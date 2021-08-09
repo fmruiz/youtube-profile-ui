@@ -1,10 +1,14 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './theme'
+// components
+import { Header } from './components/Header/Header'
 
 export const App = () => {
   return (
-    <div>
-      Hello world
-    </div>
+    <ThemeProvider theme={theme}>
+      <Header />
+    </ThemeProvider>
   )
 }
 
