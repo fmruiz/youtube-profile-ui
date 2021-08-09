@@ -12,7 +12,7 @@ export const ProfileContainer = styled.div`
 `;
 
 export const Name = styled.p`
-  color: black;
+  color: white;
 `;
 
 export const SuscribersContainer = styled.div`
@@ -20,8 +20,13 @@ export const SuscribersContainer = styled.div`
   display: flex;
 `;
 
+export const Suscribe = styled.p`
+  color: ${(props) => props.theme.color.redWarning};
+`;
+
 export const Suscribed = styled.p`
   color: gray;
+  font-weight: 500;
 `;
 
 export const NumberOfSuscribers = styled.p`
