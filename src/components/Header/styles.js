@@ -5,5 +5,5 @@ export const HeaderContainer = styled.div`
   background-color: ${(props) => props.theme.color.gray1};
   color: white;
   display: flex;
-  height: ${(props) => props.theme.height.mobileHeader};
+  height: ${(props) => props.theme.height.Header} !important;
 `;

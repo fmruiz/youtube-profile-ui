@@ -7,7 +7,13 @@ export const theme = {
     redWarning: "#FF0000",
   },
   height: {
-    mobileHeader: "48px",
-    mobileProfile: "70px",
-  }
+    Header: "48px",
+    LeftMenu: "48px",
+  },
+  width: {
+    LeftMenu: "62px",
+  },
+  font: {
+    sm: "10px",
+  },
 };
