@@ -17,12 +17,14 @@ export const ContainerItemMenus = styled.div`
 `;
 
 export const ItemMenu = styled.div`
+  color: ${(props) => props.theme.color.gray3};
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  text-align: center;
 `;
 
 export const TextMenu = styled.span`
   font-size: ${(props) => props.theme.font.sm};
-  color: ${(props) => props.theme.color.gray3};
 `;

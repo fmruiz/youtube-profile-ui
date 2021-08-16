@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faCompass } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
 import {
   ContainerItemMenus,
   ItemMenu,
@@ -6,19 +11,26 @@ import {
   TextMenu,
 } from "./styles";
 
+// logos fontawesome
+const home = <FontAwesomeIcon icon={faHome} />;
+const compass = <FontAwesomeIcon icon={faCompass} />;
+const adress = <FontAwesomeIcon icon={faAddressCard} />;
+const photo = <FontAwesomeIcon icon={faPhotoVideo} />;
+
 export const LeftMenu = () => {
   const menuItems = [
-    { name: "Home" },
-    { name: "Explore" },
-    { name: "Suscriptions" },
-    { name: "Library" },
+    { name: "Home", logo: home },
+    { name: "Explore", logo: compass },
+    { name: "Suscriptions", logo: adress },
+    { name: "Library", logo: photo },
   ];
 
   return (
     <LeftMenuContainer>
       <ContainerItemMenus>
-        {menuItems.map(({ name }) => (
+        {menuItems.map(({ name, logo }) => (
           <ItemMenu>
+            <div>{logo}</div>
             <TextMenu>{name}</TextMenu>
           </ItemMenu>
         ))}
