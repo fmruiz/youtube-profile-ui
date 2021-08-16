@@ -1,9 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faCompass } from "@fortawesome/free-solid-svg-icons";
-import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
-import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faAddressCard,
+  faCompass,
+  faPhotoVideo,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   ContainerItemMenus,
   ItemMenu,
