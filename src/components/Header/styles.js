@@ -29,12 +29,14 @@ export const MicrophoneContainer = styled.div`
 `;
 
 export const LeftSection = styled.div`
+  cursor: pointer;
   display: flex;
   padding-left: 5px;
 `;
 
 export const RightSection = styled.div`
   align-items: center;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   width: 20%;
