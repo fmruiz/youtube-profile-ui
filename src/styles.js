@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
-export const ContainerBody = styled.div`
-    display: flex;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
 `;

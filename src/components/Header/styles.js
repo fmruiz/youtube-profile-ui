@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  /* position: fixed; */
+  /* width: 100vw; */
+`;
+
+export const Container = styled.div`
   align-items: center;
   background-color: ${(props) => props.theme.color.gray1};
   color: white;
   display: flex;
   height: ${(props) => props.theme.height.Header} !important;
   justify-content: space-between;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 `;
 
 export const MicrophoneContainer = styled.div`

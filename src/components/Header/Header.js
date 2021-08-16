@@ -10,6 +10,7 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import {
+  Container,
   HeaderContainer,
   IconsDiv,
   ImgUser,
@@ -27,6 +28,7 @@ const menu = <FontAwesomeIcon icon={faBars} />;
 
 export const Header = () => (
   <HeaderContainer>
+    <Container>
     <LeftSection>
       <IconsDiv>{menu}</IconsDiv>
       <img src={logo} alt="logo" width="200" />
@@ -38,5 +40,6 @@ export const Header = () => (
       <IconsDiv>{bell}</IconsDiv>
       <ImgUser src={logoUser} alt="logo-user" width="38" />
     </RightSection>
+    </Container>
   </HeaderContainer>
 );

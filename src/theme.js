@@ -8,11 +8,11 @@ export const theme = {
     redWarning: "#FF0000",
   },
   height: {
-    Header: "48px",
+    Header: "58px",
     LeftMenu: "48px",
   },
   width: {
-    LeftMenu: "62px",
+    LeftMenu: "72px",
   },
   font: {
     sm: "10px",

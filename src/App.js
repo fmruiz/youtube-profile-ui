@@ -1,19 +1,18 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { theme } from './theme'
-import { ContainerBody } from './styles'
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
+import { Container } from "./styles";
 // components
-import { Header } from './components/Header/Header'
-import { LeftMenu } from './components/LeftMenu/LeftMenu'
+import { Header } from "./components/Header/Header";
+import { Body } from "./components/Body/Body";
 
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <ContainerBody>
-        <LeftMenu />
-      </ContainerBody>
+      <Container>
+        <Header />
+        <Body />
+      </Container>
     </ThemeProvider>
-  )
-}
-
+  );
+};

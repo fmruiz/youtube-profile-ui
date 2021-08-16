@@ -4,8 +4,8 @@ export const LeftMenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.color.gray1};
-  width: ${(props) => props.theme.width.LeftMenu};
   height: 100vh;
+  width: ${(props) => props.theme.width.LeftMenu};
 `;
 
 export const ContainerItemMenus = styled.div`
