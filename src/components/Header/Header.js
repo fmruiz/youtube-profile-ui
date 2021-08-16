@@ -7,11 +7,13 @@ import {
   faUpload,
   faBell,
   faBorderNone,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   HeaderContainer,
   IconsDiv,
   ImgUser,
+  LeftSection,
   MicrophoneContainer,
   RightSection,
 } from "./styles";
@@ -21,10 +23,14 @@ const micro = <FontAwesomeIcon icon={faMicrophone} />;
 const upload = <FontAwesomeIcon icon={faUpload} />;
 const bell = <FontAwesomeIcon icon={faBell} />;
 const borderNone = <FontAwesomeIcon icon={faBorderNone} />;
+const menu = <FontAwesomeIcon icon={faBars} />;
 
 export const Header = () => (
   <HeaderContainer>
-    <img src={logo} alt="logo" width="200" />
+    <LeftSection>
+      <IconsDiv>{menu}</IconsDiv>
+      <img src={logo} alt="logo" width="200" />
+    </LeftSection>
     <MicrophoneContainer>{micro}</MicrophoneContainer>
     <RightSection>
       <IconsDiv>{upload}</IconsDiv>

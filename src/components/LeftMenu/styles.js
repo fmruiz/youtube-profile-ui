@@ -27,4 +27,5 @@ export const ItemMenu = styled.div`
 
 export const TextMenu = styled.span`
   font-size: ${(props) => props.theme.font.sm};
+  padding-top: 4px;
 `;

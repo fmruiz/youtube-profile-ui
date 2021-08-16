@@ -23,11 +23,19 @@ export const MicrophoneContainer = styled.div`
   width: 38px;
 `;
 
+export const LeftSection = styled.div`
+  display: flex;
+  padding-left: 5px;
+`;
+
 export const RightSection = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 9%;
+  width: 20%;
+  @media (min-width: 1310px) {
+    width: 10%;
+  }
 `;
 
 export const IconsDiv = styled.div``;
