@@ -16,5 +16,6 @@ export const theme = {
   },
   font: {
     sm: "10px",
+    sm2: "14px",
   },
 };
