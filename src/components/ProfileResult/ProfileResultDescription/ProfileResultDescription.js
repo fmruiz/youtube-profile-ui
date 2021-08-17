@@ -10,6 +10,7 @@ import {
   TextContainer,
   TextDescription,
 } from "./styles";
+import { Suscribe } from "../../UI/Suscribe/Suscribe";
 
 // FontAwesomeIcon
 const Check = <FontAwesomeIcon icon={faCheckCircle} />;
@@ -33,5 +34,6 @@ export const ProfileResultDescription = ({
       </Container>
       <TextDescription>{description}</TextDescription>
     </TextContainer>
+    <Suscribe />
   </DescriptionContainer>
 );

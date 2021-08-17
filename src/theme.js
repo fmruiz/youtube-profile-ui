@@ -5,7 +5,7 @@ export const theme = {
     gray3: "#A5A5A5",
     gray4: "#303030",
     gray5: "#181818",
-    redWarning: "#FF0000",
+    redWarning: "#CC0000",
   },
   height: {
     Header: "58px",

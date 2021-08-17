@@ -8,6 +8,8 @@ export const DescriptionContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding-right: 16px;
+  padding-bottom: 16px;
 `;
 
 export const Container = styled.div`
