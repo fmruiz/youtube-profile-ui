@@ -15,11 +15,21 @@ export const Container = styled.div`
     align-items: center;
 `;
 
+export const ProfileNameContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const ProfileName = styled.p`
   color: white;
   font-size: ${(props) => props.theme.font.sm3};
   margin: 0;
   padding-bottom: 5px;
+  padding-right: 7px;
+`;
+
+export const IconDiv = styled.div`
+    color: ${(props) => props.theme.color.gray3};
 `;
 
 export const TextDescription = styled.span`

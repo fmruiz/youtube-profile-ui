@@ -20,6 +20,7 @@ export const ProfileResult = () => (
         name="Ninja"
         subscribers="24.1M subscribers"
         description="Tyler Blevins is a professional Battle Royale Player and Streamer. He currently is playing Fortnite, Valorant, and Warzone ..."
+        isVerified
       />
     </Container>
     <Divider />
