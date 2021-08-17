@@ -30,8 +30,8 @@ export const LeftMenu = () => {
   return (
     <LeftMenuContainer>
       <ContainerItemMenus>
-        {menuItems.map(({ name, logo }) => (
-          <ItemMenu>
+        {menuItems.map(({ name, logo }, i) => (
+          <ItemMenu key={i}>
             <div>{logo}</div>
             <TextMenu>{name}</TextMenu>
           </ItemMenu>
