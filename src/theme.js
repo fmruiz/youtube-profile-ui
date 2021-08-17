@@ -9,7 +9,7 @@ export const theme = {
   },
   height: {
     Header: "58px",
-    LeftMenu: "48px",
+    LeftMenu: "58px",
   },
   width: {
     LeftMenu: "72px",

@@ -6,11 +6,11 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  align-items: center;
   background-color: ${(props) => props.theme.color.gray1};
+  align-items: center;
   color: white;
   display: flex;
-  height: ${(props) => props.theme.height.Header} !important;
+  height: 5.5vh;
   justify-content: space-between;
   padding-right: 20px;
   padding-left: 20px;

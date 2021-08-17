@@ -5,7 +5,7 @@ import { ProfileResult } from '../ProfileResult/ProfileResult'
 export const Main = () => {
     return (
         <MainContainer>
-            <ProfileResult />            
+            <ProfileResult />
         </MainContainer>
     )
 }
