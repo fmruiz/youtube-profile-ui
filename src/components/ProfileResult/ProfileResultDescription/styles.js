@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DescriptionContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 55%;
 `;
 
 export const TextContainer = styled.div`
@@ -13,8 +14,14 @@ export const TextContainer = styled.div`
 `;
 
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
+  color: ${(props) => props.theme.color.gray3};
+  display: flex;
+  align-items: center;
+`;
+
+export const DotContainer = styled.div`
+  margin-left: 5px;
+  margin-right: 5px;
 `;
 
 export const ProfileNameContainer = styled.div`
@@ -31,7 +38,7 @@ export const ProfileName = styled.p`
 `;
 
 export const IconDiv = styled.div`
-    color: ${(props) => props.theme.color.gray3};
+  color: ${(props) => props.theme.color.gray3};
 `;
 
 export const TextDescription = styled.span`

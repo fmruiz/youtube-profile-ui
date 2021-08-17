@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import {
   Container,
   DescriptionContainer,
+  DotContainer,
   IconDiv,
   ProfileName,
   ProfileNameContainer,
@@ -20,20 +21,28 @@ export const ProfileResultDescription = ({
   subscribers,
   videos,
   description,
-  isVerified
-}) => (
-  <DescriptionContainer>
-    <TextContainer>
-      <ProfileNameContainer>
-        <ProfileName>{name}</ProfileName>
-        {isVerified && <IconDiv>{Check}</IconDiv>}
-      </ProfileNameContainer>
-      <Container>
-        <TextDescription>{subscribers}</TextDescription>
-        <TextDescription>{videos}</TextDescription>
-      </Container>
-      <TextDescription>{description}</TextDescription>
-    </TextContainer>
-    <Suscribe />
-  </DescriptionContainer>
-);
+  isVerified,
+}) => {
+  // subscribe state
+  const [subscribed, setSubscribed] = useState(true);
+
+  return (
+    <DescriptionContainer>
+      <TextContainer>
+        <ProfileNameContainer>
+          <ProfileName>{name}</ProfileName>
+          {isVerified && <IconDiv>{Check}</IconDiv>}
+        </ProfileNameContainer>
+        <Container>
+          <TextDescription>{subscribers}</TextDescription>
+          <DotContainer>•</DotContainer>
+          <TextDescription>{videos}</TextDescription>
+        </Container>
+        <TextDescription>{description}</TextDescription>
+      </TextContainer>
+      <div onClick={() => setSubscribed(!subscribed)}>
+        <Suscribe isSuscribed={subscribed} />
+      </div>
+    </DescriptionContainer>
+  );
+};
