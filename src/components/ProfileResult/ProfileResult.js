@@ -1,5 +1,5 @@
 import React from "react";
-import LogoProfile from "../../assets/ninja.jpg";
+import LogoProfile from "../../assets/boris.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSlidersH } from "@fortawesome/free-solid-svg-icons";
 import { Divider } from "../UI/Divider/Divider";
@@ -17,10 +17,10 @@ export const ProfileResult = () => (
         <Logo source={LogoProfile} width={136} />
       </ProfileResultLogo>
       <ProfileResultDescription
-        name="Ninja"
-        subscribers="24.1M subscribers"
-        videos="1,383 videos"
-        description="Tyler Blevins is a professional Battle Royale Player and Streamer. He currently is playing Fortnite, Valorant, and Warzone ..."
+        name="Boris Brejcha"
+        subscribers="767K subscribers"
+        videos="193 videos"
+        description="High-Tech Minimal - Exceptional Talent in 2007 - Created his own Genre High-Tech Minimal in 2012 - Established ..."
         isVerified
       />
     </Container>
