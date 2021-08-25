@@ -5,9 +5,9 @@ import { CheckContainer, YoutuberName, YoutuberNameContainer } from "./styles";
 
 const Check = <FontAwesomeIcon icon={faCheckCircle} />;
 
-export const YoutuberNameNoImg = () => (
+export const YoutuberNameNoImg = ({youtuberName}) => (
   <YoutuberNameContainer>
-    <YoutuberName></YoutuberName>
+    <YoutuberName>{youtuberName}</YoutuberName>
     <CheckContainer>{Check}</CheckContainer>
   </YoutuberNameContainer>
 );

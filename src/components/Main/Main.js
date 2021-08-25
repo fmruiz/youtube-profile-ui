@@ -1,4 +1,5 @@
 import React from "react";
+import MediaQuery from "react-responsive";
 import {
   Container,
   MainContainer,
@@ -26,7 +27,9 @@ export const Main = () => {
             />
           </ResultContainer>
         </ResultVideosContainer>
-        <MusicMenu />
+        <MediaQuery minWidth={1092}>
+          <MusicMenu />
+        </MediaQuery>
       </Container>
     </MainContainer>
   );
