@@ -1,4 +1,5 @@
 import React from "react";
+import { MinimalLogoProfile } from "../UI/MinimalLogoProfile/MinimalLogoProfile";
 import {
   ContainerQuantity,
   DescriptionContainer,
@@ -17,6 +18,7 @@ export const VideoResult = ({ videoTitle, viewsQuantity, PublicationDate }) => (
         <Dot>•</Dot>
         <VideoResultQuantity>{PublicationDate}</VideoResultQuantity>
       </ContainerQuantity>
+      <MinimalLogoProfile name={"Boris Brejcha"} isVerified/>
     </DescriptionContainer>
   </VideoResultContainer>
 );
