@@ -2,12 +2,18 @@ import styled from "styled-components";
 
 export const VideoResultContainer = styled.div`
   display: flex;
-  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const VideoResultImg = styled.img`
+  width: 360px;
+  height: 202px;
 `;
 
 export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 `;
 
 export const DescriptionCenter = styled.div`

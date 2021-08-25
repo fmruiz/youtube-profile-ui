@@ -1,4 +1,5 @@
 import React from "react";
+import Song from "../../assets/song.jpg";
 import { MinimalLogoProfile } from "../UI/MinimalLogoProfile/MinimalLogoProfile";
 import {
   ContainerQuantity,
@@ -7,6 +8,7 @@ import {
   DescriptionText,
   Dot,
   VideoResultContainer,
+  VideoResultImg,
   VideoResultQuantity,
   VideoResultTitle,
 } from "./styles";
@@ -18,6 +20,7 @@ export const VideoResult = ({
   textDescription,
 }) => (
   <VideoResultContainer>
+    <VideoResultImg src={Song} />
     <DescriptionContainer>
       <VideoResultTitle>{videoTitle}</VideoResultTitle>
       <ContainerQuantity>
