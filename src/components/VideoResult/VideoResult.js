@@ -1,8 +1,17 @@
-import React from 'react';
-import { VideoResultContainer } from './styles';
+import React from "react";
+import {
+  ContainerQuantity,
+  VideoResultContainer,
+  VideoResultQuantity,
+  VideoResultTitle,
+} from "./styles";
 
-export const VideoResult = () => (
-    <VideoResultContainer>
-        
-    </VideoResultContainer>
-)
+export const VideoResult = ({ videoTitle, viewsQuantity, PublicationDate }) => (
+  <VideoResultContainer>
+    <VideoResultTitle>{videoTitle}</VideoResultTitle>
+    <ContainerQuantity>
+      <VideoResultQuantity>{viewsQuantity}</VideoResultQuantity>•
+      <VideoResultQuantity>{PublicationDate}</VideoResultQuantity>
+    </ContainerQuantity>
+  </VideoResultContainer>
+);
