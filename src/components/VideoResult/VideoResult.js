@@ -1,6 +1,8 @@
 import React from "react";
 import {
   ContainerQuantity,
+  DescriptionContainer,
+  Dot,
   VideoResultContainer,
   VideoResultQuantity,
   VideoResultTitle,
@@ -8,10 +10,13 @@ import {
 
 export const VideoResult = ({ videoTitle, viewsQuantity, PublicationDate }) => (
   <VideoResultContainer>
-    <VideoResultTitle>{videoTitle}</VideoResultTitle>
-    <ContainerQuantity>
-      <VideoResultQuantity>{viewsQuantity}</VideoResultQuantity>•
-      <VideoResultQuantity>{PublicationDate}</VideoResultQuantity>
-    </ContainerQuantity>
+    <DescriptionContainer>
+      <VideoResultTitle>{videoTitle}</VideoResultTitle>
+      <ContainerQuantity>
+        <VideoResultQuantity>{viewsQuantity}</VideoResultQuantity>
+        <Dot>•</Dot>
+        <VideoResultQuantity>{PublicationDate}</VideoResultQuantity>
+      </ContainerQuantity>
+    </DescriptionContainer>
   </VideoResultContainer>
 );
