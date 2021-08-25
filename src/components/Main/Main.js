@@ -10,7 +10,10 @@ export const Main = () => {
       <VideoResult
         videoTitle={"Boris Brejcha - Dark Planet (Original Mix)"}
         viewsQuantity={"2.4M views"}
-        PublicationDate={"7 years ago"}
+        publicationDate={"7 years ago"}
+        textDescription={
+          "Harthouse feuerfalter part 01 feuerfalter part 01 harthouse"
+        }
       />
     </MainContainer>
   );
