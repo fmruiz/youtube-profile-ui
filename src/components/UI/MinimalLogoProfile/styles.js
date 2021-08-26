@@ -7,8 +7,8 @@ export const MinimalLogoContainer = styled.div`
 `;
 
 export const MinimalLogo = styled.img`
-    width: 24px;
-    border-radius: 50%;
+  width: 24px;
+  border-radius: 50%;
 `;
 
 export const MinimalLogoName = styled.h2`
