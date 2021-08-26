@@ -9,6 +9,10 @@ import {
   faVideo,
   faClock,
   faThumbsUp,
+  faCog,
+  faFlag,
+  faQuestionCircle,
+  faCommentAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
@@ -25,6 +29,11 @@ export const LeftMenuDesktop = () => {
   const Clock = <FontAwesomeIcon icon={faClock} />;
   const Like = <FontAwesomeIcon icon={faThumbsUp} />;
 
+  const Settings = <FontAwesomeIcon icon={faCog} />;
+  const Report = <FontAwesomeIcon icon={faFlag} />;
+  const Help = <FontAwesomeIcon icon={faQuestionCircle} />;
+  const Feedback = <FontAwesomeIcon icon={faCommentAlt} />;
+
   const firstMenu = [
     { text: "Home", logo: Home },
     { text: "Explore", logo: Compass },
@@ -39,6 +48,13 @@ export const LeftMenuDesktop = () => {
     { text: "Liked videos", logo: Like },
   ];
 
+  const settingsMenu = [
+    { text: "Settings", logo: Settings },
+    { text: "Report history", logo: Report },
+    { text: "Help", logo: Help },
+    { text: "Send feedback", logo: Feedback },
+  ];
+
   return (
     <LeftMenuDesktopContainer>
       <Container>
@@ -51,6 +67,14 @@ export const LeftMenuDesktop = () => {
 
       <Container>
         {secondMenu.map((f, i) => (
+          <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
+      <DividerBorder />
+
+      <Container>
+        {settingsMenu.map((f, i) => (
           <MenuItem key={i} text={f.text} logo={f.logo} />
         ))}
       </Container>
