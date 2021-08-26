@@ -108,6 +108,14 @@ export const LeftMenuDesktop = () => {
       </Container>
 
       <DividerBorder />
+
+      <Container>
+        {settingsMenu.map((f, i) => (
+          <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
+      <DividerBorder />
     </LeftMenuDesktopContainer>
   );
 };
