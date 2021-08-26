@@ -7,3 +7,10 @@ export const LeftMenuDesktopContainer = styled.div`
   width: 230px;
   height: 100%;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+`;

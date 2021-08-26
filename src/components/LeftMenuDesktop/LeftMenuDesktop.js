@@ -4,16 +4,26 @@ import {
   faHome,
   faCompass,
   faLaptopCode,
+  faSync,
+  faPhotoVideo,
+  faVideo,
+  faClock,
+  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
-import { LeftMenuDesktopContainer } from "./styles";
+import { Container, LeftMenuDesktopContainer } from "./styles";
 
 export const LeftMenuDesktop = () => {
   // logo components
   const Home = <FontAwesomeIcon icon={faHome} />;
   const Compass = <FontAwesomeIcon icon={faCompass} />;
   const Laptop = <FontAwesomeIcon icon={faLaptopCode} />;
+  const Library = <FontAwesomeIcon icon={faPhotoVideo} />;
+  const History = <FontAwesomeIcon icon={faSync} />;
+  const Video = <FontAwesomeIcon icon={faVideo} />;
+  const Clock = <FontAwesomeIcon icon={faClock} />;
+  const Like = <FontAwesomeIcon icon={faThumbsUp} />;
 
   const firstMenu = [
     { text: "Home", logo: Home },
@@ -22,22 +32,29 @@ export const LeftMenuDesktop = () => {
   ];
 
   const secondMenu = [
-    { text: "Library", logo: Home },
-    { text: "History", logo: Compass },
-    { text: "Your videos", logo: Laptop },
-    { text: "Watch later", logo: Laptop },
-    { text: "Liked videos", logo: Laptop },
+    { text: "Library", logo: Library },
+    { text: "History", logo: History },
+    { text: "Your videos", logo: Video },
+    { text: "Watch later", logo: Clock },
+    { text: "Liked videos", logo: Like },
   ];
 
   return (
     <LeftMenuDesktopContainer>
-      {firstMenu.map((f, i) => (
-        <MenuItem key={i} text={f.text} logo={f.logo} />
-      ))}
+      <Container>
+        {firstMenu.map((f, i) => (
+          <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
       <DividerBorder />
-      {secondMenu.map((f, i) => (
-        <MenuItem key={i} text={f.text} logo={f.logo} />
-      ))}
+
+      <Container>
+        {secondMenu.map((f, i) => (
+          <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
       <DividerBorder />
     </LeftMenuDesktopContainer>
   );
