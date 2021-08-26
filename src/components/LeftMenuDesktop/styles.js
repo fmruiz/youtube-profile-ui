@@ -4,8 +4,9 @@ export const LeftMenuDesktopContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.color.gray1};
-  width: 230px;
-  height: 100vh;
+  width: 250px;
+  padding-right: 20px;
+  overflow-y: hidden;
 
   :hover {
     overflow-y: scroll;

@@ -17,7 +17,7 @@ import {
   faGamepad,
   faSatelliteDish,
   faLightbulb,
-  faTrophy
+  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
