@@ -13,6 +13,11 @@ import {
   faFlag,
   faQuestionCircle,
   faCommentAlt,
+  faFilm,
+  faGamepad,
+  faSatelliteDish,
+  faLightbulb,
+  faTrophy
 } from "@fortawesome/free-solid-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
@@ -28,7 +33,11 @@ export const LeftMenuDesktop = () => {
   const Video = <FontAwesomeIcon icon={faVideo} />;
   const Clock = <FontAwesomeIcon icon={faClock} />;
   const Like = <FontAwesomeIcon icon={faThumbsUp} />;
-
+  const Movies = <FontAwesomeIcon icon={faFilm} />;
+  const Gamepad = <FontAwesomeIcon icon={faGamepad} />;
+  const Live = <FontAwesomeIcon icon={faSatelliteDish} />;
+  const Learning = <FontAwesomeIcon icon={faLightbulb} />;
+  const Sports = <FontAwesomeIcon icon={faTrophy} />;
   const Settings = <FontAwesomeIcon icon={faCog} />;
   const Report = <FontAwesomeIcon icon={faFlag} />;
   const Help = <FontAwesomeIcon icon={faQuestionCircle} />;
@@ -46,6 +55,15 @@ export const LeftMenuDesktop = () => {
     { text: "Your videos", logo: Video },
     { text: "Watch later", logo: Clock },
     { text: "Liked videos", logo: Like },
+  ];
+
+  const thirdMenu = [
+    { text: "Youtube Premium", logo: Library },
+    { text: "Movies", logo: Movies },
+    { text: "Gaming", logo: Gamepad },
+    { text: "Live", logo: Live },
+    { text: "Learning", logo: Learning },
+    { text: "Sports", logo: Sports },
   ];
 
   const settingsMenu = [
@@ -67,6 +85,14 @@ export const LeftMenuDesktop = () => {
 
       <Container>
         {secondMenu.map((f, i) => (
+          <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
+      <DividerBorder />
+
+      <Container>
+        {thirdMenu.map((f, i) => (
           <MenuItem key={i} text={f.text} logo={f.logo} />
         ))}
       </Container>
