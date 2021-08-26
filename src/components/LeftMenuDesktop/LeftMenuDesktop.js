@@ -19,6 +19,7 @@ import {
   faLightbulb,
   faTrophy
 } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
 import { Container, LeftMenuDesktopContainer } from "./styles";
@@ -34,6 +35,7 @@ export const LeftMenuDesktop = () => {
   const Clock = <FontAwesomeIcon icon={faClock} />;
   const Like = <FontAwesomeIcon icon={faThumbsUp} />;
   const Movies = <FontAwesomeIcon icon={faFilm} />;
+  const Youtube = <FontAwesomeIcon icon={faYoutube} />;
   const Gamepad = <FontAwesomeIcon icon={faGamepad} />;
   const Live = <FontAwesomeIcon icon={faSatelliteDish} />;
   const Learning = <FontAwesomeIcon icon={faLightbulb} />;
@@ -58,7 +60,7 @@ export const LeftMenuDesktop = () => {
   ];
 
   const thirdMenu = [
-    { text: "Youtube Premium", logo: Library },
+    { text: "Youtube Premium", logo: Youtube },
     { text: "Movies", logo: Movies },
     { text: "Gaming", logo: Gamepad },
     { text: "Live", logo: Live },
