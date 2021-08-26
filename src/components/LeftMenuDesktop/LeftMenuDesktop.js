@@ -1,9 +1,21 @@
-import React from 'react'
-import { DividerBorder } from '../UI/DividerBorder/DividerBorder'
-import { LeftMenuDesktopContainer } from './styles'
+import React from "react";
+import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
+import { MenuItem } from "./MenuItem/MenuItem";
+import { LeftMenuDesktopContainer } from "./styles";
 
-export const LeftMenuDesktop = () => (
+export const LeftMenuDesktop = () => {
+  const firstMenu = [
+    { text: "Home" },
+    { text: "Explore" },
+    { text: "Subscriptions" },
+  ];
+
+  return (
     <LeftMenuDesktopContainer>
-        <DividerBorder />
+      {firstMenu.map((f, i) => (
+        <MenuItem key={i} text={f.text} />
+      ))}
+      <DividerBorder />
     </LeftMenuDesktopContainer>
-)
+  );
+};
