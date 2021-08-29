@@ -7,10 +7,10 @@ import { ContainerBody } from "./styles";
 
 export const Body = () => (
   <ContainerBody>
-    <MediaQuery maxWidth={1091}>
+    <MediaQuery maxWidth={1284}>
     <LeftMenu />
     </MediaQuery>
-    <MediaQuery minWidth={1092}>
+    <MediaQuery minWidth={1285}>
       <LeftMenuDesktop />
     </MediaQuery>
     <Main />

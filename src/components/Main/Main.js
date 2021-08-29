@@ -27,7 +27,7 @@ export const Main = () => {
             />
           </ResultContainer>
         </ResultVideosContainer>
-        <MediaQuery minWidth={1092}>
+        <MediaQuery minWidth={1285}>
           <MusicMenu />
         </MediaQuery>
       </Container>
