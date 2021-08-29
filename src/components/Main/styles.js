@@ -28,11 +28,16 @@ export const MainContainer = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  @media(min-width: 1550px) {
+    max-width: 1265px !important;
+    margin: 0 auto;
+  }
 `;
 
 export const ResultVideosContainer = styled.div`
   display: flex;
   flex-direction: column;
+  
 `;
 
 export const ResultContainer = styled.div`
