@@ -6,6 +6,7 @@ export const theme = {
     gray4: "#303030",
     gray5: "#181818",
     gray6: "#0F0F0F",
+    gray7: "#717171",
     redWarning: "#CC0000",
   },
   height: {

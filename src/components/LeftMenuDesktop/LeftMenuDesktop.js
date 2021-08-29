@@ -23,6 +23,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
 import { Container, LeftMenuDesktopContainer } from "./styles";
+import { LeftMenuFooter } from "./LeftMenuFooter/LeftMenuFooter";
 
 export const LeftMenuDesktop = () => {
   // logo components
@@ -110,9 +111,7 @@ export const LeftMenuDesktop = () => {
       <DividerBorder />
 
       <Container>
-        {settingsMenu.map((f, i) => (
-          <MenuItem key={i} text={f.text} logo={f.logo} />
-        ))}
+        <LeftMenuFooter />
       </Container>
 
       <DividerBorder />
