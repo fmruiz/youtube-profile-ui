@@ -37,11 +37,4 @@ export const Container = styled.div`
 export const ResultVideosContainer = styled.div`
   display: flex;
   flex-direction: column;
-  
-`;
-
-export const ResultContainer = styled.div`
-  padding: 15px 0px;
-  display: flex;
-  flex-direction: column;
 `;

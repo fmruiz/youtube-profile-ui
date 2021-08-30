@@ -23,8 +23,8 @@ export const SongDetails = () => {
 
   return (
     <>
-      {songs.map((s) => (
-        <SongDetailsContainer>
+      {songs.map((s, i) => (
+        <SongDetailsContainer key={i}>
           <SongContainer>
             <SongDetailsTitle>{s.name}</SongDetailsTitle>
             <SongDetailsViews>{s.views}</SongDetailsViews>
