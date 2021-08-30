@@ -1,9 +1,20 @@
 import React from "react";
-import { MenuItemContainer, MenuItemLogo, MenuItemText } from "./styles";
+import {
+  MenuItemContainer,
+  MenuItemImg,
+  MenuItemLogo,
+  MenuItemText,
+} from "./styles";
 
-export const MenuItem = ({ logo, text }) => (
+export const MenuItem = ({ logo, text, img }) => (
   <MenuItemContainer>
-    <MenuItemLogo>{logo}</MenuItemLogo>
+    {img ? (
+      <MenuItemLogo>
+        <MenuItemImg src={img} />
+      </MenuItemLogo>
+    ) : (
+      <MenuItemLogo>{logo}</MenuItemLogo>
+    )}
     <MenuItemText>{text}</MenuItemText>
   </MenuItemContainer>
 );

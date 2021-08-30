@@ -21,6 +21,11 @@ export const MenuItemLogo = styled.div`
   justify-content: center;
 `;
 
+export const MenuItemImg = styled.img`
+  width: 24px;
+  border-radius: 50%;
+`;
+
 export const MenuItemText = styled.div`
   font-size: ${(p) => p.theme.font.sm2};
 `;

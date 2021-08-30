@@ -24,6 +24,12 @@ import { DividerBorder } from "../UI/DividerBorder/DividerBorder";
 import { MenuItem } from "./MenuItem/MenuItem";
 import { Container, LeftMenuDesktopContainer } from "./styles";
 import { LeftMenuFooter } from "./LeftMenuFooter/LeftMenuFooter";
+import { Subscriptions } from "./Subscriptions/Subscriptions";
+import coldplay from "../../assets/coldplay.jpg";
+import artic from "../../assets/artic.jpg";
+import guns from "../../assets/guns.jpg";
+import weeknd from "../../assets/weeknd.jpg";
+import { SubscriptionsTitle } from "./Subscriptions/styles";
 
 export const LeftMenuDesktop = () => {
   // logo components
@@ -76,6 +82,13 @@ export const LeftMenuDesktop = () => {
     { text: "Send feedback", logo: Feedback },
   ];
 
+  const subscriptions = [
+    { text: "Coldplay", logo: coldplay },
+    { text: "Artic Monkeys", logo: artic },
+    { text: "The Weeknd", logo: weeknd },
+    { text: "Guns N' Roses", logo: guns },
+  ];
+
   return (
     <LeftMenuDesktopContainer>
       <Container>
@@ -89,6 +102,15 @@ export const LeftMenuDesktop = () => {
       <Container>
         {secondMenu.map((f, i) => (
           <MenuItem key={i} text={f.text} logo={f.logo} />
+        ))}
+      </Container>
+
+      <DividerBorder />
+
+      <Container>
+        <SubscriptionsTitle>SUBSCRIPTIONS</SubscriptionsTitle>
+        {subscriptions.map((s, i) => (
+          <Subscriptions key={i} channelName={s.text} photo={s.logo} />
         ))}
       </Container>
 
@@ -113,8 +135,6 @@ export const LeftMenuDesktop = () => {
       <Container>
         <LeftMenuFooter />
       </Container>
-
-      <DividerBorder />
     </LeftMenuDesktopContainer>
   );
 };
