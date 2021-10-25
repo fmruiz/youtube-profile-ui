@@ -30,17 +30,17 @@ export const ProfileResultDescription = ({
     <DescriptionContainer data-testid={"profile-description"}>
       <TextContainer>
         <ProfileNameContainer>
-          <ProfileName>{name}</ProfileName>
+          <ProfileName data-testid={"profile-name"}>{name}</ProfileName>
           {isVerified && <IconDiv>{Check}</IconDiv>}
         </ProfileNameContainer>
         <Container>
-          <TextDescription>{subscribers}</TextDescription>
+          <TextDescription data-testid={"profile-subs"}>{subscribers}</TextDescription>
           <DotContainer>•</DotContainer>
-          <TextDescription>{videos}</TextDescription>
+          <TextDescription data-testid={"profile-videos"}>{videos}</TextDescription>
         </Container>
-        <TextDescription>{description}</TextDescription>
+        <TextDescription data-testid={"profile-description-text"}>{description}</TextDescription>
       </TextContainer>
-      <div onClick={() => setSubscribed(!subscribed)}>
+      <div onClick={() => setSubscribed(!subscribed)} data-testid={"btn-sub"}>
         <Suscribe isSuscribed={subscribed} />
       </div>
     </DescriptionContainer>

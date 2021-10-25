@@ -8,7 +8,7 @@ import {
 } from "./styles";
 
 export const Divider = ({ title, icon }) => (
-  <DividerContainer>
+  <DividerContainer data-testid={"divider"}>
     {title || icon ? (
       <TitleContainer>
         <IconDiv>{icon}</IconDiv>
