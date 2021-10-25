@@ -11,10 +11,10 @@ const filter = <FontAwesomeIcon icon={faSlidersH} />;
 
 export const ProfileResult = () => (
   <ProfileResultContainer>
-    <Divider title="FILTERS" icon={filter} />
+    <Divider title="FILTERS" icon={filter}/>
     <Container>
       <ProfileResultLogo>
-        <Logo source={LogoProfile} width={136} />
+        <Logo source={LogoProfile} width={136}/>
       </ProfileResultLogo>
       <ProfileResultDescription
         name="Boris Brejcha"

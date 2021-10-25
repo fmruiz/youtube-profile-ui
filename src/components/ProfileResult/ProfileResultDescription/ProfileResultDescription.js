@@ -27,7 +27,7 @@ export const ProfileResultDescription = ({
   const [subscribed, setSubscribed] = useState(true);
 
   return (
-    <DescriptionContainer>
+    <DescriptionContainer data-testid={"profile-description"}>
       <TextContainer>
         <ProfileNameContainer>
           <ProfileName>{name}</ProfileName>

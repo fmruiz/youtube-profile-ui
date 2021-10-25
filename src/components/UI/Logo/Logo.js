@@ -7,4 +7,4 @@ const LogoImg = styled.img`
     }
 `;
 
-export const Logo = ({source, width}) => <LogoImg src={source} width={width}/>
+export const Logo = ({source, width}) => <LogoImg src={source} width={width} data-testid={"logo"}/>
