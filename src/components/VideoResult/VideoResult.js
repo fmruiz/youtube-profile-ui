@@ -20,18 +20,18 @@ export const VideoResult = ({
   textDescription,
 }) => (
   <VideoResultContainer>
-    <VideoResultImg src={Song} />
+    <VideoResultImg src={Song} data-testid={"video-result-img"}/>
     <DescriptionContainer>
-      <VideoResultTitle>{videoTitle}</VideoResultTitle>
+      <VideoResultTitle data-testid={"video-result-title"}>{videoTitle}</VideoResultTitle>
       <ContainerQuantity>
-        <VideoResultQuantity>{viewsQuantity}</VideoResultQuantity>
+        <VideoResultQuantity data-testid={"video-result-views"}>{viewsQuantity}</VideoResultQuantity>
         <Dot>•</Dot>
-        <VideoResultQuantity>{publicationDate}</VideoResultQuantity>
+        <VideoResultQuantity data-testid={"video-result-date"}>{publicationDate}</VideoResultQuantity>
       </ContainerQuantity>
       <DescriptionCenter>
         <MinimalLogoProfile name={"Boris Brejcha"} isVerified />
       </DescriptionCenter>
-      <DescriptionText>{textDescription}</DescriptionText>
+      <DescriptionText data-testid={"video-result-text"}>{textDescription}</DescriptionText>
     </DescriptionContainer>
   </VideoResultContainer>
 );
